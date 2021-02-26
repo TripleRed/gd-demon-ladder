@@ -66,9 +66,9 @@ for i in range(pagestart, pageend + 1):
 
     # * setup for url *
     if difficulty == 1:
-        url = 'https://gdbrowser.com/api/search/*?diff=-2&page=' + str(i)
+        url = 'https://gdbrowser.com/api/search/*?diff=-2&type=recent&page=' + str(i)
     elif difficulty == 2:
-        url='https://gdbrowser.com/api/search/*?diff=5&starred=1&page='+str(i)
+        url = 'https://gdbrowser.com/api/search/*?diff=5&starred=1&type=recent&page=' + str(i)
     else:
         print('gdl> Bad difficulty setting. Please contact author for this.')
         print('gdl> Requests will now stop.')
