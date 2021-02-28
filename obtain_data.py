@@ -91,6 +91,9 @@ for i in range(pagestart, pageend + 1):
 
     # * write into file *
     fileedit.write(leveltext)
+
+    # * returns to line start to overwrite prompt *
+    # this makes the prompt look more dynamic
     print('\r', end='')
 
 fileedit.write('\n]') # same thing as the [ but at the end
