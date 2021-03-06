@@ -11,7 +11,8 @@
 
 # ** Setup **
 import requests, sys
-key = "" # API key has been deleted for security purposes
+print("gdl> Enter API key:", end=' ')
+key = input() # API key request
 wholelist = "'The List'!A:AU"
 def url_request(a1notation):
     apiurl = "https://sheets.googleapis.com/v4/spreadsheets/1xaMERl70vzr8q9MqElr4YethnV15EOe8oL1UV9LLljc/values/" + a1notation + "?key=" + key

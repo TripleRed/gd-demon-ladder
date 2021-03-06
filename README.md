@@ -5,3 +5,4 @@ Please contact the owner (ideally through Discord: RFMX#4373) if you wish to use
 https://discord.gg/TWhxaeM
 ## Current scripts
 obtain_data.py - Scraps data from gdbrowser.com API
+request_brython.py - Displays data from the spreadsheet, preparing for porting to Brython and website
