@@ -39,6 +39,7 @@ while True:
     url = "https://gdbrowser.com/api/level/" + id_in_question
     leveldata = requests.get(url) # request from website
     leveltext = leveldata.text
+    leveljson = leveldata.json()
         # obtained data is not human-readable so need to convert
         # I chose to use a new var to store the original data
 
@@ -54,6 +55,7 @@ while True:
 
     # * write into file *
     fileedit.write(leveltext)
+    print('gdl> Successfully obtained data for ' + leveljson['name'] + ' by ' + leveljson['author'])
 
 fileedit.write('\n]') # same thing as the [ but at the end
 fileedit.close()
@@ -61,5 +63,9 @@ fileedit.close()
 ############# end of get serious backdoor moment #############
 
 # ** End prompt **
+print()
 print('gdl> Check levels.json for output.')
-print('gdl> Ending program.')
+print('gdl> Pasting the generated JSON file to https://csvjson.com/json2csv will yield a CSV file.')
+print('gdl> This can be opened in Excel as a spreadsheet format.')
+print('gdl> Ending program.', end=" ")
+input()

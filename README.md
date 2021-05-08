@@ -7,4 +7,5 @@ https://discord.gg/TWhxaeM
 obtain_data.py - Scraps data from gdbrowser.com API  
 request_brython.py - Displays data from the spreadsheet, preparing for porting to Brython and website  
 filters.py - Search by filters
-newrates - Scraps data from gdbrowser.com API, but I can specify the ID numbers
+newrates.py - Scraps data from gdbrowser.com API, but I can specify the ID numbers
+race.py - Generates race demons for me
